@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <script src="https://kit.fontawesome.com/c6f8ad6da3.js" crossorigin="anonymous"></script> 
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <section class="top">
+    <img class="bg-image" src="images/pattern-circles.svg" alt="">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>  
+  </section>
+
+  <div class="card">
+    <div class="stats">
+      <div class="stats__views">
+        <span></span> Pageviews
+      </div>
+      <div class="price__slider">
+        <input value="100000" min="1" max="5" step="1" type="range" id="range" class="range">
+      </div>
+      <div class="stats__price">
+        <b class="bigger-text">$<span></span>.00</b> /month
+      </div>
+      <div class="billing">
+        Monthly Billing
+        <label for="billing" class="checkbox">
+          <input type="checkbox" name="checkbox" id="billing">
+          <span class="toggle"></span>
+        </label>
+        Yearly Billing
+        <span class="billing__discount desktop">25% discount</span>
+        <span class="billing__discount mobile">-25%</span>
+      </div>
+    </div>
+    <div class="trial">
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+      <button class="cta">Start my trial</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
